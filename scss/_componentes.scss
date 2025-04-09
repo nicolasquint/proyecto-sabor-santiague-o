@@ -1,0 +1,141 @@
+// NAVBAR
+.navbar-brand {
+    img {
+        @include centrado-flex;
+        width: 100%;
+    }
+}
+
+.body-color {
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+// TITULOS
+h1 {
+    text-align: center;
+    font-size: $fuente-h1;
+    font-family: $fuente-principal;
+}
+
+p {
+    font-weight: bold;
+    margin: 1rem;
+}
+
+// CARDS
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 60px;
+
+    .img-estilo {
+        width: 200%;
+        max-width: none;
+        height: auto;
+        border-radius: $border-radius;
+    }
+}
+
+// GALERÍA DE PRECIOS
+.galeria-precios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+    }
+}
+
+// NOSOTROS
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+        border-radius: $border-radius;
+    }
+}
+
+// CARRUSEL
+.carousel-item {
+    img {
+        max-height: 650px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.carousel-caption {
+
+    h5,
+    p {
+        text-shadow: $sombra-texto;
+    }
+}
+
+// FOOTER
+footer {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 6rem;
+    padding: 5px;
+    background-color: $color-fondo;
+    color: $color-texto;
+
+    img {
+        width: 50px;
+        height: 50px;
+        margin: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-brand {
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 50px;
+        }
+    }
+
+    .card-grid {
+        grid-template-columns: auto;
+        width: 353px;
+        gap: 20px;
+        margin: 19px;
+
+        .img-estilo {
+            width: 350px;
+            height: auto;
+        }
+    }
+
+    .galeria-precios {
+        grid-template-columns: auto;
+        gap: 20px;
+        justify-items: center;
+
+        img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            max-width: 300px;
+        }
+    }
+}

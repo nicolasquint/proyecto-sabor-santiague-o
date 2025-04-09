@@ -1,0 +1,6 @@
+// Mixin para centrar con flex
+@mixin centrado-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
