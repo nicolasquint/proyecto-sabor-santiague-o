@@ -1,3 +1,10 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .navbar-brand img {
   display: flex;
   justify-content: center;
@@ -44,6 +51,10 @@ p {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.galeria-precios img:hover {
+  transform: scale(1.1);
 }
 
 .nosotros {
@@ -63,7 +74,6 @@ p {
   object-fit: contain;
 }
 
-.carousel-caption h5,
 .carousel-caption p {
   text-shadow: 2px 2px 4px black;
 }
@@ -113,13 +123,40 @@ footer a {
     justify-content: center;
     border-radius: 12px;
     max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .galeria-precios img:hover {
+    transform: scale(1.1);
   }
 }
-/* RESET GENERAL */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 40px;
+  }
+  .card-grid .img-estilo {
+    width: 100%;
+    height: auto;
+  }
+  .galeria-precios {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 10px;
+  }
+  .galeria-precios img {
+    max-width: 90%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .galeria-precios img:hover {
+    transform: scale(1.1);
+  }
+  .nosotros {
+    padding: 20px;
+  }
+  .nosotros img {
+    max-width: 80%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

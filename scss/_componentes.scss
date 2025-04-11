@@ -49,6 +49,11 @@ p {
         max-width: 100%;
         height: auto;
         border-radius: $border-radius;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -76,7 +81,6 @@ p {
 
 .carousel-caption {
 
-    h5,
     p {
         text-shadow: $sombra-texto;
     }
@@ -102,7 +106,7 @@ footer {
     }
 }
 
-
+// MEDIA QUERY MOBILE
 @media screen and (max-width: 768px) {
     .navbar-brand {
         img {
@@ -136,6 +140,51 @@ footer {
             justify-content: center;
             border-radius: 12px;
             max-width: 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+    }
+}
+
+
+// MEDIA QUERY TABLET
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 40px;
+
+        .img-estilo {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .galeria-precios {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+
+        img {
+            max-width: 90%;
+            height: auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .nosotros {
+        padding: 20px;
+
+        img {
+            max-width: 80%;
         }
     }
 }
