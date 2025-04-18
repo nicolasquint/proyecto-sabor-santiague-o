@@ -115,7 +115,7 @@ footer {
 @media screen and (max-width: 768px) {
     .navbar-brand {
         img {
-            max-width: 100%;
+            max-width: 90%;
             height: auto;
             max-height: 50px;
         }
@@ -131,8 +131,14 @@ footer {
             width: 350px;
             height: auto;
         }
+        
     }
 
+    .nosotros {
+        img {
+        max-width: 350px;
+    }
+    }
     .galeria-precios {
         grid-template-columns: auto;
         gap: 20px;

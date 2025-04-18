@@ -101,7 +101,7 @@ footer a {
 
 @media screen and (max-width: 768px) {
   .navbar-brand img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     max-height: 50px;
   }
@@ -114,6 +114,9 @@ footer a {
   .card-grid .img-estilo {
     width: 350px;
     height: auto;
+  }
+  .nosotros img {
+    max-width: 350px;
   }
   .galeria-precios {
     grid-template-columns: auto;
