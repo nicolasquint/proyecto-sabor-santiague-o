@@ -28,15 +28,7 @@ h1 {
 }
 
 p {
-  font-weight: bold;
-  margin: 1rem;
-}
-
-.parrafo {
-  text-align: center;
-  font-weight: bold;
-  margin: 30px auto;
-  max-width: 900px;
+  color: red;
 }
 
 .card-grid {
@@ -87,20 +79,6 @@ p {
 
 .carousel-caption p {
   text-shadow: 2px 2px 4px black;
-}
-
-.boton-enviar {
-  background-color: #0c693d;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.boton-enviar:hover {
-  background-color: #29be79;
 }
 
 footer {

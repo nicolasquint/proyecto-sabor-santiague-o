@@ -28,6 +28,13 @@ p {
     margin: 1rem;
 }
 
+.parrafo {
+    text-align: center;
+    font-weight: bold;
+    margin: 30px auto;
+    max-width: 900px;
+}
+
 // CARDS
 .card-grid {
     display: grid;
@@ -89,7 +96,22 @@ p {
     p {
         text-shadow: $sombra-texto;
     }
-}
+} 
+
+//CONTACTO
+.boton-enviar {
+    background-color: #0c693d; 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton-enviar:hover {
+    background-color: #29be79; 
+  }
 
 // FOOTER
 footer {
